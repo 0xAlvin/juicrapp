@@ -1,0 +1,42 @@
+# Gradle & Build
+.gradle/
+build/
+*/build/
+
+# Local environment
+local.properties
+*.env
+*.jks
+*.keystore
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.tmp
+*.swp
+
+# Generated code
+ksp/
+generated/
+
+# Test / coverage
+coverage/
+*.out
+*.exec
+
+# Archives / binaries
+*.zip
+*.tar
+*.rar
+*.7z
