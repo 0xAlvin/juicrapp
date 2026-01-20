@@ -4,5 +4,5 @@ data class IngredientEntity(
     val id: Long,
     val name: String,
     val category: String,
-    val imgRes: Int
+    val imgRes: String
 )
