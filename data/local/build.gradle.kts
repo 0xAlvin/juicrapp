@@ -34,4 +34,7 @@ dependencies {
     ksp(libs.room.compiler)
     testImplementation(libs.room.testing)
 
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+
 }
