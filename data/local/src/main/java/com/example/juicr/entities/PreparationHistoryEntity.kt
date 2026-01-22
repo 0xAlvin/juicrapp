@@ -3,7 +3,7 @@ package com.example.juicr.entities
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "preparation_history")
 data class PreparationHistoryEntity(
     @PrimaryKey val id: Long,
     val juiceId: Long,
