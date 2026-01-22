@@ -1,7 +1,11 @@
-import com.example.juicr.models.IngredientEntity
+package com.example.juicr.entities
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "juices")
 data class JuiceEntity(
-    val id: String,
+    @PrimaryKey val id: String,
     val name: String,
     val description: String,
     val color: String,

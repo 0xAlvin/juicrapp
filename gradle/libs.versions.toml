@@ -1,6 +1,6 @@
 [versions]
 compileSdk = "36"
-minSdk = "24"
+minSdk = "30"
 targetSdk = "36"
 agp = "8.13.2"
 ksp = "2.3.4"
