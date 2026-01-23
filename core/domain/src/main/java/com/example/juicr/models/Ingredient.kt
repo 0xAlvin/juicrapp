@@ -1,6 +1,5 @@
 package com.example.juicr.models
-
-data class IngredientEntity(
+data class Ingredient(
     val id: Long,
     val name: String,
     val category: String,

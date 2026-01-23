@@ -1,4 +1,4 @@
-package com.example.juicr
+package com.example.domain
 
 import org.junit.Test
 

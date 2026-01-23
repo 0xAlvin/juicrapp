@@ -1,4 +1,4 @@
-package com.example.juicr
+package com.example.juicr.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

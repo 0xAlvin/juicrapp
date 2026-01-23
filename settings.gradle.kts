@@ -24,7 +24,6 @@ rootProject.name = "juicr"
 include(":app")
 
 include(":core:common")
-include(":core:data")
 include(":core:domain")
 
 include(":data:local")
@@ -32,3 +31,4 @@ include(":data:repositories")
 
 include(":feature:home")
 
+include(":core:domain")

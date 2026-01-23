@@ -1,6 +1,6 @@
-import com.example.juicr.models.IngredientEntity
+package com.example.juicr.models
 
-data class JuiceEntity(
+data class Juice(
     val id: String,
     val name: String,
     val description: String,
@@ -8,7 +8,7 @@ data class JuiceEntity(
     val rating: Double,
     val dateAdded: Long,
     val prepTime: Long,
-    val ingredients: List<IngredientEntity>,
+    val ingredients: List<Ingredient>,
     val timesPrepared: Int,
     val isFavourite: Boolean
 )

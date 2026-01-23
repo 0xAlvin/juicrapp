@@ -1,6 +1,6 @@
 package com.example.juicr.models
 
-data class PreparationHistoryEntity(
+data class PreparationHistory(
     val id: Long,
     val juiceId: Long,
     val timestamp: Long,
