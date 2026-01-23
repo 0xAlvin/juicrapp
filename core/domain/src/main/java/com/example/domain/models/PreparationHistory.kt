@@ -1,3 +1,5 @@
+package com.example.domain.models
+
 data class PreparationHistory(
     val id: Long,
     val juiceId: Long,
