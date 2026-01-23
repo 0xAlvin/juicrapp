@@ -1,3 +1,5 @@
+package com.example.domain.models
+
 data class Juice(
     val id: String,
     val name: String,
