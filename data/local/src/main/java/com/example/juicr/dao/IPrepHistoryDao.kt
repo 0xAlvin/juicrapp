@@ -10,18 +10,19 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface IPrepHistoryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun add(history : PreparationHistoryEntity)
+    suspend fun addHistory(history : PreparationHistoryEntity): Int
+
     @Query("""
         SELECT * FROM preparation_history
         WHERE juiceId = :juiceId
         ORDER BY timestamp DESC
     """)
-    fun getByJuiceId(juiceId: Long): Flow<List<PreparationHistoryEntity>>
+    fun getHistoryByJuiceId(juiceId: Long): Flow<List<PreparationHistoryEntity>>
 
     @Query("""
         SELECT * FROM preparation_history
         ORDER BY timestamp DESC
         LIMIT :limit
     """)
-    fun getRecent(limit: Int = 20): Flow<List<PreparationHistoryEntity>>
+    fun getRecentHistory(limit: Int? = 20): Flow<List<PreparationHistoryEntity>>
 }
