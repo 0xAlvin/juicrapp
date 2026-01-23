@@ -1,6 +1,6 @@
 package com.example.juicr.mappers
 
-import com.example.domain.models.Ingredient
+import com.example.juicr.models.Ingredient
 import com.example.juicr.entities.IngredientEntity
 
 fun IngredientEntity.toDomain(): Ingredient =

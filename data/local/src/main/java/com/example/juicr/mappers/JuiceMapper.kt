@@ -1,10 +1,9 @@
 package com.example.juicr.mappers
 
-import com.example.domain.models.Ingredient
-import com.example.domain.models.Juice
+import com.example.juicr.models.Ingredient
+import com.example.juicr.models.Juice
 import com.example.juicr.entities.IngredientEntity
 import com.example.juicr.entities.JuiceEntity
-import kotlin.String
 
 fun JuiceEntity.toDomain(): Juice {
     return Juice(
