@@ -1,4 +1,4 @@
-package com.example.domain.models
+package com.example.juicr.models
 
 data class Juice(
     val id: String,
