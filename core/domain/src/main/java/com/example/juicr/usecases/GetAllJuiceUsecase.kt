@@ -8,7 +8,7 @@ import javax.inject.Inject
 class GetAllJuiceUsecase @Inject constructor(
     private val juiceRepository: IJuiceRepository
 ) {
-    suspend operator fun invoke(): Flow<List<Juice>> {
+    operator fun invoke(): Flow<List<Juice>> {
         return juiceRepository.getAllJuices()
     }
 }

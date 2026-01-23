@@ -32,3 +32,4 @@ include(":data:repositories")
 include(":feature:home")
 
 include(":core:domain")
+include(":core:presentation")
