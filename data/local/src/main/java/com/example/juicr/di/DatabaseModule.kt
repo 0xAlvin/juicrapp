@@ -2,7 +2,7 @@ package com.example.juicr.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.juicr.AppDatabase
+import com.example.juicr.database.AppDatabase
 import com.example.juicr.dao.IJuiceDao
 import com.example.juicr.dao.IPrepHistoryDao
 import dagger.Module
