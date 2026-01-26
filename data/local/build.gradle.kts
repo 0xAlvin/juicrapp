@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id(libs.plugins.ksp.get().pluginId)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -17,9 +17,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "17"
-    }
+
 }
 
 dependencies {
