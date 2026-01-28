@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
 }
@@ -55,6 +56,8 @@ dependencies {
     //data
     implementation(project(":data:local"))
     implementation(project(":data:repositories"))
+
+    implementation(libs.kotlinx.serialization.json)
 
     //AndroidX
     implementation(libs.androidx.core.ktx)

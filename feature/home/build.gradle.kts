@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -37,6 +38,8 @@ dependencies {
     // Project modules
     implementation(project(":core:presentation"))
     implementation(project(":core:domain"))
+
+    implementation(libs.kotlinx.serialization.json)
 
     // AndroidX
     implementation(libs.androidx.core.ktx)
