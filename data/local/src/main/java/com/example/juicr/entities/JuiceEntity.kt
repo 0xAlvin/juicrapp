@@ -2,10 +2,12 @@ package com.example.juicr.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.serialization.Serializable
 
 @Entity(tableName = "juices")
+@Serializable
 data class JuiceEntity(
-    @PrimaryKey val id: String,
+    @PrimaryKey val id: Long,
     val name: String,
     val description: String,
     val color: String,

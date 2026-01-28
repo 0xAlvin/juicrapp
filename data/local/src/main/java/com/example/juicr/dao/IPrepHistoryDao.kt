@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface IPrepHistoryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun addHistory(history : PreparationHistoryEntity): Int
+    suspend fun addHistory(history : PreparationHistoryEntity): Long
 
     @Query("""
         SELECT * FROM preparation_history

@@ -1,7 +1,7 @@
 package com.example.juicr.models
 
 data class Juice(
-    val id: String,
+    val id: Long,
     val name: String,
     val description: String,
     val color: String,

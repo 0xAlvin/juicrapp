@@ -12,7 +12,7 @@ import javax.inject.Inject
 class PreparationHistoryRepositoryImpl @Inject constructor(
     private val prepHistoryDao: IPrepHistoryDao
 ): IPreparationHistory {
-    override suspend fun addHistory(prepHistory: PreparationHistory): Int {
+    override suspend fun addHistory(prepHistory: PreparationHistory) : Long{
         return prepHistoryDao.addHistory(prepHistory.toEntity())
     }
 
