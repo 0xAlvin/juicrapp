@@ -2,4 +2,5 @@
 <resources>
     <string name="homescreen_topbar_text">Juicr</string>
     <string name="searchbar_icon_content_description">searchbar icon</string>
+    <string name="search_placeholder">Search...</string>
 </resources>
